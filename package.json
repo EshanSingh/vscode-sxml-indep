@@ -69,11 +69,14 @@
 				"title": "Scholarly XML",
 				"properties": {
 					"sxml.languagesToCheck": {
-						"type":"array",
+						"type": "array",
 						"items": {
-							"type":"string"
+							"type": "string"
 						},
-						"default":["xml","pretext"],
+						"default": [
+							"xml",
+							"pretext"
+						],
 						"description": "Specify any additional languages on which Scholarly XML should activate."
 					},
 					"sxml.defaultSchemas": {
@@ -120,6 +123,7 @@
 	"dependencies": {
 		"file-url": "^4.0.0",
 		"node-xsl-schematron": "^1.0.3",
-		"salve-annos": "^1.2.4"
+		"salve-annos": "^1.2.4",
+		"xregexp": "^4.3.0"
 	}
 }

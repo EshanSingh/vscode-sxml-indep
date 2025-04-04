@@ -199,7 +199,7 @@ async function parse(isNewSchema: boolean, rngSource: string, xmlSource: string,
         if (!diagnostics) { diagnostics = []; }
     
         const names = err.getNames();
-        const namesMsg = names.map((n) => {
+        const namesMsg = names.map((n: any) => {
             const name = n.toJSON();
             let ns = name.ns ? `(${name.ns})` : '';
             return `"${name.name}" ${ns}`;
